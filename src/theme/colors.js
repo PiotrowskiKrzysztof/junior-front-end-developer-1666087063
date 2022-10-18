@@ -1,4 +1,4 @@
-export default {
+export const colors = {
   GreyBackground: "#f4f5f7",
   Green: "#47bf7c",
   Blue: "#0165ff",

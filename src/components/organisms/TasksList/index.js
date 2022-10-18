@@ -1,8 +1,9 @@
+import { Typography } from "../../atoms/Typography";
 import * as Styled from "./styles";
 
 export const TasksList = () => (
   <Styled.Container>
-    <p>TasksList</p>
+    <Typography variant="header">YOUR TASKS</Typography>
   </Styled.Container>
 );
 
