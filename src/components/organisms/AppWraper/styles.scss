@@ -1,0 +1,9 @@
+@import "../../../globalStyles/colors.scss";
+
+.appWraper {
+  background-color: $greyBackground;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding: 2rem;
+}
