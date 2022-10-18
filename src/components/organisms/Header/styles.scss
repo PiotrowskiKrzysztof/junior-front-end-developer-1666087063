@@ -1,0 +1,18 @@
+@import "../../../globalStyles/colors.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.125rem 0;
+  svg {
+    cursor: pointer;
+    fill: $black;
+  }
+  img {
+    border: 0.063rem solid $greyBodycopy;
+    padding: 0.125rem;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}

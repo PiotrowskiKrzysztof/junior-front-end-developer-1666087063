@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,OAAO,CAAC;EACN,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,WAAW,EAAE,MAAM;EACnB,OAAO,EAAE,UAAU;CAWpB;;AAfD,AAKE,OALK,CAKL,GAAG,CAAC;EACF,MAAM,EAAE,OAAO;EACf,IAAI,ECNA,IAAI;CDOT;;AARH,AASE,OATK,CASL,GAAG,CAAC;EACF,MAAM,EAAE,QAAQ,CAAC,KAAK,CCPX,OAAO;EDQlB,OAAO,EAAE,QAAQ;EACjB,aAAa,EAAE,GAAG;EAClB,MAAM,EAAE,OAAO;CAChB",
+    "sources": [
+        "styles.scss",
+        "../../../globalStyles/colors.scss"
+    ],
+    "names": [],
+    "file": "styles.css"
+}

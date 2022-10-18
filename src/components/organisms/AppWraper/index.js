@@ -1,9 +1,11 @@
+import Header from "../Header";
+
 import "./styles.css";
 
 const AppWraper = () => {
   return (
     <div className="appWraper">
-      <p>AppWraper</p>
+      <Header />
     </div>
   );
 };
