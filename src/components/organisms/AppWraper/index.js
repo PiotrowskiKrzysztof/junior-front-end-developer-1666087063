@@ -1,12 +1,14 @@
 import Header from "../Header";
+import TasksList from "../TasksList";
 
-import "./styles.css";
+import * as Styled from "./styles";
 
 const AppWraper = () => {
   return (
-    <div className="appWraper">
+    <Styled.AppWraper>
       <Header />
-    </div>
+      <TasksList />
+    </Styled.AppWraper>
   );
 };
 

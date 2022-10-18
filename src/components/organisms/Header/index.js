@@ -1,12 +1,12 @@
-import "./styles.css";
 import { Logo } from "../../../assets/svg";
 import user from "../../../assets/images/Frame46.png";
+import * as Styled from "./styles";
 
 const Header = () => (
-  <div className="header">
+  <Styled.Container>
     <Logo />
     <img src={user} alt="User" />
-  </div>
+  </Styled.Container>
 );
 
 export default Header;
