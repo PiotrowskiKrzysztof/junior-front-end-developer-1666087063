@@ -14,8 +14,12 @@ ${reset};
 }
 body {
   font-family: ${({ theme }) => theme.fonts.body};
-  font-size: 100px;
+  font-size: 16px;
   color: ${({ theme }) => theme.colors.BlackHeadline};
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 `;
 

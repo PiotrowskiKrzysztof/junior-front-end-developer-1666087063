@@ -1,3 +1,4 @@
+import Footer from "../Footer";
 import Header from "../Header";
 import TasksList from "../TasksList";
 
@@ -8,6 +9,7 @@ const AppWraper = () => {
     <Styled.AppWraper>
       <Header />
       <TasksList />
+      <Footer />
     </Styled.AppWraper>
   );
 };

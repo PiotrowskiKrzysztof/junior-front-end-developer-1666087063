@@ -3,6 +3,7 @@ export const fonts = {
 };
 
 export const fontSizes = {
+  fontSize8: "0.5rem",
   fontSize10: "0.625rem",
   fontSize12: "0.75rem",
   fontSize16: "1rem",
@@ -24,7 +25,6 @@ export const textStyles = {
   subHeader: {
     fontSize: "fontSize12",
     lineHeight: "1.5em",
-    fontWeight: "medium",
   },
   smallText: {
     fontSize: "fontSize10",
@@ -34,5 +34,10 @@ export const textStyles = {
     fontSize: "fontSize12",
     lineHeight: "2em",
     fontWeight: "regular",
+  },
+  footerText: {
+    fontSize: "fontSize8",
+    lineHeight: "1.5em",
+    fontWeight: "medium",
   },
 };
