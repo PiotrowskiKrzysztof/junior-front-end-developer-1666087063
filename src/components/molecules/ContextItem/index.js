@@ -3,7 +3,6 @@ import * as Styled from "./styles";
 
 const ContextItem = ({ title, author, created_at, status }) => {
   const date = new Date(created_at);
-  console.log();
   return (
     <Styled.Container {...{ status }}>
       <Styled.InfoContainer>
