@@ -1,11 +1,14 @@
 import styled, { css } from "styled-components";
 import { Typography } from "../../atoms/Typography";
 
-export const Container = styled.div`
+export const Container = styled.button`
   background-color: ${({ theme }) => theme.colors.White};
   padding: 1.25rem;
   border-radius: 0.5rem;
   cursor: pointer;
+  border: none;
+  text-align: left;
+  width: 100%;
   ${({ status }) =>
     status === "active" &&
     css`
