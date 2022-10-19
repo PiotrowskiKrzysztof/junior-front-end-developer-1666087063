@@ -11,15 +11,18 @@ const TasksContext = createContext(null);
 
 export const AppWraper = () => {
   const [selectedTask, setSelectedTask] = useState(dummyTasks[0].id);
+  const [tasks, setTasks] = useState(dummyTasks);
   const context = {
     selectedTask,
     setSelectedTask,
+    tasks,
+    setTasks,
   };
   return (
     <TasksContext.Provider value={context}>
       <Styled.AppWraper>
         <Header />
-        <TasksList {...{ dummyTasks }} />
+        <TasksList {...{ tasks }} />
         <BusinessContext />
         <Footer />
       </Styled.AppWraper>

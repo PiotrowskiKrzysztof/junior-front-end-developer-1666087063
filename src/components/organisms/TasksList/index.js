@@ -2,23 +2,24 @@ import Task from "../../molecules/Task";
 import * as Styled from "./styles";
 import { useTasksContext } from "../AppWraper";
 
-const TasksList = ({ dummyTasks }) => {
+const TasksList = ({ tasks }) => {
   const context = useTasksContext();
   return (
     <Styled.Container>
       <Styled.Header variant="header">YOUR TASKS</Styled.Header>
       <Styled.TasksContainer>
-        {dummyTasks.map((task) => (
-          <div
+        {tasks.map((task) => (
+          <Task
             key={task?.id}
-            onClick={
+            {...task}
+            selectedTask={context?.selectedTask}
+            handleSelectedTask={
               task?.status !== "locked"
                 ? () => context?.setSelectedTask(task?.id)
                 : null
             }
-          >
-            <Task {...task} selectedTask={context?.selectedTask} />
-          </div>
+          />
+          // </div>
         ))}
       </Styled.TasksContainer>
     </Styled.Container>
