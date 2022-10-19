@@ -1,4 +1,4 @@
-import { useState, createContext, useContext } from "react";
+import { createContext, useContext } from "react";
 import BusinessContext from "../BusinessContext";
 import { dummyTasks } from "./consts";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -9,10 +9,8 @@ import Layout from "../../../pages/Layout";
 const TasksContext = createContext(null);
 
 export const AppWraper = () => {
-  const [tasks, setTasks] = useState(dummyTasks);
   const context = {
-    tasks,
-    setTasks,
+    tasks: dummyTasks,
   };
   return (
     <TasksContext.Provider value={context}>
@@ -20,7 +18,7 @@ export const AppWraper = () => {
         <Router>
           <Routes>
             <Route path="/" element={<Layout />}>
-              {tasks.map((task) => (
+              {context?.tasks.map((task) => (
                 <Route
                   key={task?.id}
                   path={`/:taskId`}
