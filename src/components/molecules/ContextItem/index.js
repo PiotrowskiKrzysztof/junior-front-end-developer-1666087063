@@ -11,7 +11,7 @@ const ContextItem = ({ title, author, created_at, status }) => {
         <Typography fontSize="fontSize10">•</Typography>
         <Typography fontSize="fontSize10">{`${date.toLocaleString("en", {
           month: "short",
-        })} ${date.getDay()}`}</Typography>
+        })} ${date.getDate()}`}</Typography>
       </Styled.InfoContainer>
       <Styled.Title variant="subHeader" {...{ status }}>
         {title}
