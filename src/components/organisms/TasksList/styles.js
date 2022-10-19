@@ -3,7 +3,7 @@ import { Typography } from "../../atoms/Typography";
 
 export const Container = styled.div`
   background-color: ${({ theme }) => theme.colors.White};
-  width: 25%;
+  grid-column: 1 / 2;
   border-radius: 0.75rem;
   display: flex;
   flex-direction: column;
