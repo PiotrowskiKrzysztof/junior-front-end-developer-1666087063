@@ -1,30 +1,33 @@
-import { useState, createContext, useContext } from "react";
+import { createContext, useContext } from "react";
 import BusinessContext from "../BusinessContext";
-import Footer from "../Footer";
-import Header from "../Header";
-import TasksList from "../TasksList";
 import { dummyTasks } from "./consts";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import * as Styled from "./styles";
+import Layout from "../../../pages/Layout";
 
 const TasksContext = createContext(null);
 
 export const AppWraper = () => {
-  const [selectedTask, setSelectedTask] = useState(dummyTasks[0].id);
-  const [tasks, setTasks] = useState(dummyTasks);
   const context = {
-    selectedTask,
-    setSelectedTask,
-    tasks,
-    setTasks,
+    tasks: dummyTasks,
   };
   return (
     <TasksContext.Provider value={context}>
       <Styled.AppWraper>
-        <Header />
-        <TasksList {...{ tasks }} />
-        <BusinessContext />
-        <Footer />
+        <Router>
+          <Routes>
+            <Route path="/" element={<Layout />}>
+              {context?.tasks.map((task) => (
+                <Route
+                  key={task?.id}
+                  path={`/:taskId`}
+                  element={<BusinessContext />}
+                />
+              ))}
+            </Route>
+          </Routes>
+        </Router>
       </Styled.AppWraper>
     </TasksContext.Provider>
   );

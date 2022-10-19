@@ -1,22 +1,16 @@
 import { useTasksContext } from "../../organisms/AppWraper";
 import ContextItem from "../ContextItem";
 import * as Styled from "./styles";
-import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 
 export const ContextList = () => {
   const context = useTasksContext();
-  const [selectedObject, setSelectedObject] = useState(
-    context?.tasks.find((task) => task?.id === context?.selectedTask)
-  );
-  useEffect(() => {
-    setSelectedObject(
-      context?.tasks.find((task) => task?.id === context?.selectedTask)
-    );
-  }, [context?.selectedTask]);
+  const { taskId } = useParams();
+  const selectedObject = context?.tasks.find((task) => task?.id === taskId);
   return (
     <Styled.Container>
       {selectedObject?.businessContexts.map((item) => (
-        <ContextItem {...item} />
+        <ContextItem key={item?.id} {...item} />
       ))}
     </Styled.Container>
   );

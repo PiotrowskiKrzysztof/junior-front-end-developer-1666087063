@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Typography } from "../../atoms/Typography";
 
-export const Container = styled.div`
+export const Container = styled.section`
   padding: 1.125rem 2.25rem;
   display: grid;
   grid-template-columns: auto 1fr;
