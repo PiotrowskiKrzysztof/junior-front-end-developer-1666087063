@@ -13,18 +13,11 @@ export const ContextList = () => {
       context?.tasks.find((task) => task?.id === context?.selectedTask)
     );
   }, [context?.selectedTask]);
-  console.log(selectedObject);
   return (
     <Styled.Container>
-      {/* {context?.tasks.map((item) => (
+      {selectedObject?.businessContexts.map((item) => (
         <ContextItem {...item} />
-      ))} */}
-      {selectedObject?.businessContexts.map((item) => {
-        <ContextItem {...item} />;
-      })}
-      {/* <ContextItem status={"new"} />
-      <ContextItem status={"active"} />
-      <ContextItem status={"done"} /> */}
+      ))}
     </Styled.Container>
   );
 };
