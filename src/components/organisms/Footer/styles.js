@@ -5,6 +5,7 @@ export const Container = styled.div`
   padding-top: 1rem;
   display: flex;
   justify-content: space-between;
+  grid-column: 1 / 3;
 `;
 
 export const Link = styled.a`

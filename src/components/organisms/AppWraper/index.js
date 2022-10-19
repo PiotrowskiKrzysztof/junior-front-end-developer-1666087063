@@ -1,4 +1,5 @@
 import { useState, createContext, useContext } from "react";
+import BusinessContext from "../BusinessContext";
 import Footer from "../Footer";
 import Header from "../Header";
 import TasksList from "../TasksList";
@@ -19,6 +20,7 @@ export const AppWraper = () => {
       <Styled.AppWraper>
         <Header />
         <TasksList {...{ dummyTasks }} />
+        <BusinessContext />
         <Footer />
       </Styled.AppWraper>
     </TasksContext.Provider>

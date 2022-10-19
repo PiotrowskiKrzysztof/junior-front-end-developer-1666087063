@@ -33,11 +33,16 @@ export const textStyles = {
   paragraph: {
     fontSize: "fontSize12",
     lineHeight: "2em",
-    fontWeight: "regular",
+    fontWeight: "medium",
   },
   footerText: {
     fontSize: "fontSize8",
     lineHeight: "1.5em",
     fontWeight: "medium",
+  },
+  messageTitle: {
+    fontSize: "fontSize21",
+    lineHeight: "1.57em",
+    fontWeight: "semiBold",
   },
 };
