@@ -7,6 +7,7 @@ export const Container = styled.div`
   border-radius: 0.75rem;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 1px 0 0 ${({ theme }) => theme.colors.Shadow};
 `;
 
 export const Header = styled(Typography)`

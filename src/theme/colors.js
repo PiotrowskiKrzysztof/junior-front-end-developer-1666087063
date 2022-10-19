@@ -7,4 +7,5 @@ export const colors = {
   GreyBodycopy: "#6b778c",
   GreyBodycopyAlt: "#aeb5c1",
   BlackHeadline: "#242325",
+  Shadow: "#dfe1e6",
 };
