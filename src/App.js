@@ -1,5 +1,5 @@
 import "./App.css";
-import AppWraper from "./components/organisms/AppWraper";
+import { AppWraper } from "./components/organisms/AppWraper";
 import { ThemeProvider } from "styled-components";
 import theme from "./theme";
 import GlobalStyles from "./theme/GlobalStyles";

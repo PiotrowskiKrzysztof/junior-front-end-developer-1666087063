@@ -4,7 +4,7 @@ import { Typography } from "../../atoms/Typography";
 export const Container = styled.div`
   padding: 0.5rem;
   display: flex;
-  //   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   border-radius: 0.25rem;
   ${({ isLocked }) =>
     !isLocked &&
