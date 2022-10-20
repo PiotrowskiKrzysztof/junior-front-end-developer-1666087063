@@ -3,6 +3,7 @@ import * as Styled from "./styles";
 import { useTasksContext } from "../AppWraper";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import ConditionalLink from "../../atoms/ConditionalLink";
 
 const TasksList = () => {
   const context = useTasksContext();
@@ -12,7 +13,11 @@ const TasksList = () => {
       <Styled.Header variant="header">YOUR TASKS</Styled.Header>
       <Styled.TasksContainer>
         {context?.tasks.map((task) => (
-          <Link key={task?.id} to={task?.id}>
+          <ConditionalLink
+            key={task?.id}
+            to={task?.id}
+            condition={task?.status !== "locked"}
+          >
             <Task
               {...task}
               selectedTask={selectedTask}
@@ -22,7 +27,7 @@ const TasksList = () => {
                   : null
               }
             />
-          </Link>
+          </ConditionalLink>
         ))}
       </Styled.TasksContainer>
     </Styled.Container>
