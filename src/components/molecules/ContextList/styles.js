@@ -8,4 +8,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   row-gap: 0.5rem;
+  @media only screen and (max-width: 459px) {
+    margin: 0;
+  }
 `;
