@@ -5,26 +5,6 @@ import { Typography } from "../../atoms/Typography";
 import moment from "moment/moment";
 
 const Message = ({ title, author, content, created_at }) => {
-  // const rtf = new Intl.RelativeTimeFormat("en-us");
-  // const difrenceDay = new Date(created_at).getDate() - new Date().getDate();
-  // console.log(tmpDate);
-
-  // const dateFormater = () => {
-  //   const rtf = new Intl.RelativeTimeFormat("en-us");
-  //   const today = new Date();
-  //   const date2 = new Date(created_at);
-  //   // const diffrenceDays =
-  //   //   Math.abs(today.getTime() - created.getTime()) / (1000 * 3600 * 24);
-
-  //   const diffrenceTime = Math.abs(today - date2);
-  //   const diffrenceDays = Math.ceil(diffrenceTime / (1000 * 3600 * 24));
-  //   if (diffrenceDays === 1) return "Today";
-  //   else if (diffrenceDays === 7) return "Week ago";
-  //   else if (diffrenceDays >= 14) return (diffrenceDays % 7) + " Weeks ago";
-  //   else if (diffrenceDays >= 30)
-  //   console.log(diffrenceDays);
-  // };
-
   const dateData = {
     day: new Date(created_at).getDate(),
     month: new Date(created_at).getMonth(),
@@ -41,10 +21,6 @@ const Message = ({ title, author, content, created_at }) => {
         <Styled.MessageInfo>
           <Styled.Author>{author}</Styled.Author>
           <Typography variant="smallText"> •</Typography>
-          {/* <Typography variant="smallText">{`${rtf.format(
-            new Date(created_at).getDate() - new Date().getDate(),
-            "day"
-          )}, 17th December`}</Typography> */}
           <Typography variant="smallText">
             {moment([dateData.year, dateData.month, dateData.day]).fromNow()}
           </Typography>

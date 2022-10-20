@@ -9,10 +9,11 @@ export const Container = styled.button`
   border: none;
   text-align: left;
   width: 100%;
-  ${({ status }) =>
-    status === "active" &&
+  ${({ isActive }) =>
+    isActive &&
     css`
       box-shadow: 0px 0.5rem 1rem rgba(84, 84, 84, 0.2);
+      background-color: ${({ theme }) => theme.colors.White} !important;
     `}
   ${({ status }) =>
     status === "done" &&

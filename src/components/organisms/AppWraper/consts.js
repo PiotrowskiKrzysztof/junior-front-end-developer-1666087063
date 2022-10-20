@@ -2,7 +2,7 @@ export const dummyTasks = [
   {
     id: "asddjiasmd121m221m213",
     title: "Application Setup",
-    status: "done",
+    status: "progress",
     businessContexts: [
       {
         id: "dsadjasdsos42144214214",
@@ -20,7 +20,7 @@ export const dummyTasks = [
           "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
         author: "Kirsten Aniston",
         created_at: "Wed Oct 19 2022 12:26:16 GMT+0200",
-        status: "active",
+        status: "new",
       },
       {
         id: "dasmdasd12391323ji1dw",
@@ -29,14 +29,14 @@ export const dummyTasks = [
           "Hello! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
         author: "Olga Nelson",
         created_at: "Wed Oct 13 2022 11:54:16 GMT+0200",
-        status: "done",
+        status: "new",
       },
     ],
   },
   {
     id: "FSAasfwe213dsaDDSADS",
     title: "Static Books List",
-    status: "done",
+    status: "locked",
     businessContexts: [
       {
         id: "dasmdasdl19231238321933",
@@ -45,7 +45,7 @@ export const dummyTasks = [
           "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
         author: "Lorem Ipsum",
         created_at: "Wed Jan 21 2022 14:24:16 GMT+0200",
-        status: "done",
+        status: "new",
       },
       {
         id: "dasjdi2ko312332DASD",
@@ -54,14 +54,14 @@ export const dummyTasks = [
           "Hello! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
         author: "Lorem Ipsum",
         created_at: "Wed Oct 19 2022 18:24:16 GMT+0200",
-        status: "done",
+        status: "new",
       },
     ],
   },
   {
     id: "sfwdasffsege23adssad",
     title: "Administration Panel",
-    status: "done",
+    status: "locked",
     businessContexts: [
       {
         id: "sakdosdk912332okdkowqd",
@@ -70,14 +70,14 @@ export const dummyTasks = [
           "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
         author: "Lorem Ipsum",
         created_at: "Wed Oct 19 2022 17:44:16 GMT+0200",
-        status: "done",
+        status: "new",
       },
     ],
   },
   {
     id: "dwefsfefmewfewfwfo82",
     title: "Connect Admin with Frontend",
-    status: "progress",
+    status: "locked",
     businessContexts: [
       {
         id: "d29133129edasidkoawe213",
@@ -86,7 +86,7 @@ export const dummyTasks = [
           "Hello! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
         author: "Lorem Ipsum",
         created_at: "Wed Oct 19 2022 17:44:16 GMT+0200",
-        status: "done",
+        status: "new",
       },
     ],
   },
@@ -102,7 +102,7 @@ export const dummyTasks = [
           "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
         author: "Lorem Ipsum",
         created_at: "Wed Oct 19 2022 17:44:16 GMT+0200",
-        status: "done",
+        status: "new",
       },
     ],
   },

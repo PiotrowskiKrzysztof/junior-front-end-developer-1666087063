@@ -5,12 +5,15 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import * as Styled from "./styles";
 import Layout from "../../../pages/Layout";
+import { useState } from "react";
 
 const TasksContext = createContext(null);
 
 export const AppWraper = () => {
+  const [tasks, setTasks] = useState(dummyTasks);
   const context = {
-    tasks: dummyTasks,
+    tasks,
+    setTasks,
   };
   return (
     <TasksContext.Provider value={context}>

@@ -11,10 +11,25 @@ const BusinessContext = () => {
   const { taskId } = useParams();
   const selectedObject = context?.tasks.find((task) => task?.id === taskId);
   const [selectedContext, setSelectedContext] = useState(null);
+
+  const changeStatus = (contextId) => {
+    const data = [...context?.tasks];
+    const index = data.findIndex((obj) => obj.id === taskId);
+    const index2 = data[index].businessContexts.findIndex(
+      (obj) => obj.id === contextId
+    );
+    data[index].businessContexts[index2].status = "done";
+    context?.setTasks(data);
+  };
+
   return (
     <Styled.Container>
       <ContextMenu />
-      <ContextList {...selectedObject} {...{ setSelectedContext }} />
+      <ContextList
+        {...selectedObject}
+        {...{ setSelectedContext }}
+        {...{ changeStatus }}
+      />
       {selectedContext && <Message {...selectedContext} />}
     </Styled.Container>
   );
