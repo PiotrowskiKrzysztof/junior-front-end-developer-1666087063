@@ -1,7 +1,6 @@
 import Task from "../../molecules/Task";
 import * as Styled from "./styles";
 import { useTasksContext } from "../AppWraper";
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import ConditionalLink from "../../atoms/ConditionalLink";
 
