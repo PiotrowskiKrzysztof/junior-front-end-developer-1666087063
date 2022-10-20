@@ -1,10 +1,18 @@
+import { useState } from "react";
 import { Typography } from "../../atoms/Typography";
 import * as Styled from "./styles";
 
-const ContextItem = ({ title, author, created_at, status }) => {
+const ContextItem = ({
+  title,
+  author,
+  created_at,
+  status,
+  handleSelectedContext,
+}) => {
+  const [currentStatus, setCurrentStatus] = useState(status);
   const date = new Date(created_at);
   return (
-    <Styled.Container {...{ status }}>
+    <Styled.Container status={currentStatus} onClick={handleSelectedContext}>
       <Styled.InfoContainer>
         {status === "new" && <Styled.New fontSize="fontSize10">NEW</Styled.New>}
         <Typography fontSize="fontSize10">{author}</Typography>
